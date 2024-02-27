@@ -1,0 +1,35 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2023.0.0.0
+Path=D:\Load Runner Exam II\Controller\JPetstore_Scenario.lrs
+Subject=
+Result_file=D:\Load Runner Exam II\Controller\JPetstore_Result\JPetstore_Result.lrr
+Description=
+ResultName=JPetstore_Result
+Time_Zone=-19800
+Start_time=1708940216
+Daylight_Bias=0
+Stop_time=1708940730
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 9 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:02:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:30 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+Global Schedule=ST9_1E15;R120;SP9_1E30;
+[Scripts]
+Smoketest_JPetstore=D:\Load Runner Exam II\VuGen Scripts\JPetstore_Solution\Smoketest_JPetstore\Smoketest_JPetstore.usr
+Loadtest_JPetstore=D:\Load Runner Exam II\VuGen Scripts\JPetstore_Solution\Loadtest_JPetstore\Loadtest_JPetstore.usr
+[Scripts_types]
+Smoketest_JPetstore=Multi+QTWeb
+Loadtest_JPetstore=Multi+QTWeb
