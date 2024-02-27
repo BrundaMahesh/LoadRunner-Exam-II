@@ -1,0 +1,19 @@
+vuser_end()
+{
+
+	web_add_header("Accept-Language", 
+		"en-GB,en;q=0.9");
+
+	lr_think_time(21);
+
+	web_url("Catalog.action",
+		"URL=https://petstore.octoperf.com/actions/Catalog.action",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=https://petstore.octoperf.com/actions/Cart.action?addItemToCart=&workingItemId={workingItemId}",
+		"Snapshot=t6.inf",
+		"Mode=HTML",
+		LAST);
+
+	return 0;
+}

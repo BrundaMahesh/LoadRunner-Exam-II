@@ -1,0 +1,67 @@
+Action()
+{
+
+	/* Search Input */
+
+	web_add_auto_header("Accept-Language", 
+		"en-GB,en;q=0.9");
+
+	lr_think_time(21);
+
+	web_submit_data("Catalog.action;jsessionid=26DA05FCE45FCF96D564D487238FF056",
+		"Action=https://petstore.octoperf.com/actions/Catalog.action;jsessionid={jsessionid}",
+		"Method=POST",
+		"RecContentType=text/html",
+		"Referer=https://petstore.octoperf.com/actions/Catalog.action",
+		"Snapshot=t3.inf",
+		"Mode=HTML",
+		ITEMDATA,
+		"Name=keyword", "Value={SearchInput}", ENDITEM,
+		"Name=searchProducts", "Value=Search", ENDITEM,
+		"Name=_sourcePage", "Value=no7xr-F7OFWltrU6uvZyro4CKY7NrD506aOnI62zYHUuM0kjtNi5MUK0uQP_s7AuLxfdQfGng0VXAP7Yd9_oLGsKttZRmzab", ENDITEM,
+		"Name=__fp", "Value=yA6sz7rHFs050qdImTXDSOCNT7fgvzScXV0KDE3nqMQpoUvpMNb90r738c84g8IS", ENDITEM,
+		LAST);
+
+	web_reg_find("Text=Fish", 
+		LAST);
+	
+	/* Click on first Product */
+
+	lr_think_time(22);
+
+/*Correlation comment - Do not change!  Original value='EST-20' Name ='workingItemId' Type ='ResponseBased'*/
+	web_reg_save_param_regexp(
+		"ParamName=workingItemId",
+		"RegExp=itemId=(.*?)\">EST-20",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"IgnoreRedirections=No",
+		LAST);
+
+	web_link("Fresh Water fish from China", 
+		"Text=Fresh Water fish from China", 
+		"Snapshot=t4.inf", 
+		LAST);
+
+    //Text Check
+    web_reg_find("Text=Goldfish", 
+		LAST);
+
+	
+/* Click on Add to Cart */
+
+
+	//Text Check
+    web_reg_find("Text=Shopping Cart",
+		LAST);
+
+	lr_think_time(15);
+
+	web_link("Add to Cart", 
+		"Text=Add to Cart", 
+		"Ordinal=1", 
+		"Snapshot=t5.inf", 
+		LAST);
+
+	return 0;
+}
