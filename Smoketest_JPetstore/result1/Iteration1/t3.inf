@@ -1,0 +1,13 @@
+[t3]
+SnapshotXmlFile=snapshot_2.xml
+ContentType=text/html
+StepName=Link: Enter the Store
+Total=1
+FileName1=t3.html
+RequestHeaderFile=t3_RequestHeader.txt
+ResponseHeaderFile=t3_ResponseHeader.txt
+RawStepEndTime=1708938059785
+RawStepName=Enter the Store
+RequestBodyFile=t3_RequestBody.txt
+RawStepStartTime=1708938059025
+URL1=https://petstore.octoperf.com/actions/Catalog.action

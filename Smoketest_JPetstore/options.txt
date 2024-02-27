@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\Load Runner Exam II\VuGen Scripts\JPetstore_Solution\Smoketest_JPetstore
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ed:\load runner exam ii\vugen scripts\jpetstore_solution\smoketest_jpetstore\\logfile.log
+d:\load runner exam ii\vugen scripts\jpetstore_solution\smoketest_jpetstore\\combined_Smoketest_JPetstore.c
+d:\load runner exam ii\vugen scripts\jpetstore_solution\smoketest_jpetstore\\pre_cci.c

@@ -1,0 +1,51 @@
+Virtual User Script started at: 26-02-2024 14:30:56
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2023.0.0 for Windows 10; build 506 (Mar 08 2023 13:11:40)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\Load Runner Exam II\VuGen Scripts\JPetstore_Solution\Smoketest_JPetstore\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(12): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(12): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(14): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+vuser_init.c(14): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+vuser_init.c(17): web_url("petstore.octoperf.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(17): Found resource "https://petstore.octoperf.com/css/jpetstore.css" in HTML "https://petstore.octoperf.com/"  	[MsgId: MMSG-26659]
+vuser_init.c(17): web_url("petstore.octoperf.com") was successful, 6835 body bytes, 567 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(31): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+vuser_init.c(31): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+vuser_init.c(40): web_link("Enter the Store") started  	[MsgId: MMSG-26355]
+vuser_init.c(40): Linking to "https://petstore.octoperf.com/actions/Catalog.action", Target Frame=""  	[MsgId: MMSG-27994]
+vuser_init.c(40): Resource "https://petstore.octoperf.com/css/jpetstore.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/logo-topbar.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/cart.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/separator.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/sm_fish.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/sm_dogs.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/sm_reptiles.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/sm_cats.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/sm_birds.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/fish_icon.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/dogs_icon.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/cats_icon.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/reptiles_icon.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/birds_icon.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Found resource "https://petstore.octoperf.com/images/splash.gif" in HTML "https://petstore.octoperf.com/actions/Catalog.action"  	[MsgId: MMSG-26659]
+vuser_init.c(40): Notify: Saving Parameter "jsessionid = 2D3FBA692D854287861C38ADC5BD6A4A".
+vuser_init.c(40): web_link("Enter the Store") was successful, 49136 body bytes, 4247 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(45): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(45): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(49): web_image_check started  	[MsgId: MMSG-26355]
+vuser_init.c(49): "JPetstore Logo" succeeded (1 occurrence(s) found. Alt="", Src="../images/logo-topbar.gif")  	[MsgId: MMSG-27192]
+vuser_init.c(49): web_image_check was successful  	[MsgId: MMSG-26392]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Runtime Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
